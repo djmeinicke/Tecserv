@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>       
+    <meta charset="utf-8">
+    <title>TECSERV</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="./midia/image_/logo.jpg">
+    
+</head>
+
+<body>
+    <div class="container">
+
+		<!--────────────────Cabeçalho───────────────-->
+		<header>
+			<a class="logo">
+				<img src="./midia/image_/logo_.png" />
+			</a>
+			<nav>
+				<ul class="nav-bar">
+					<div class="bg"></div>
+                    <li><a class="nav-link" href=index.html>Home</a></li>
+				</ul>
+			</nav>
+		</header>
+    <main>
+
+		<!--─────────────────Home────────────────-->
+		<div id="homeCarqueja">
+			<div class="filter"></div>
+			<section class="intro">
+				<h3>COLABORADORES
+                    <hr>
+				</h3>
+			</section>
+		</div>
+
+       <!--───────────────Conteudo───────────────-->   
+
+       <link href="carrosel.css" rel="stylesheet" type="text/css" />
+
+       <div class="carrosel">    
+           <ul>
+               <li>
+                <img src="./midia/image_/eletrecista.png" width="500px" height="400px">
+            </li>
+            <li>
+                <img src="./midia/image_/ar.png" width="500px"height="400px">
+            </li>
+            <li>
+                <img src="./midia/image_/Gesso.png" width="500px"height="400px">
+            </li>
+            <li>
+                <img src="./midia/image_/montador.png" width="500px"height="400px">
+            </li>
+            <li>
+                <img src="./midia/image_/pedreiro.png" width="500px"height="400px">
+            </li>
+            <li>
+                <img src="./midia/image_/pintor.png" width="500px"height="400px">
+               </li>
+           </ul>
+       </div>  
+
+       <div class="filter"></div>
+       
+       <div class="service-container">
+        <h2>Selecione o Serviço</h2>
+        <div class="service-selector">
+          <select id="serviceSelect" onchange="displayProfessionals()">
+            <option value="">Escolha uma categoria</option>
+            <option value="pedreiro">Pedreiro</option>
+            <option value="pintor">Pintor</option>
+            <option value="montador">Montador</option>
+            <option value="drywall">Drywall</option>
+            <option value="eletricista">Eletricista</option>
+            <option value="ar_condicionado">Ar Condicionado</option>
+          </select>
+        </div>
+        <div id="professionalList"></div>
+      </div>
+    
+      <script src="script.js"></script>
+      
+      <!-- Espaço extra -->
+<div style="height: 60px;"></div>
+
+            </main>
+
+        <body>
+            
+    </html>

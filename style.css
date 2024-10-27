@@ -1,0 +1,459 @@
+:root{
+	--main-background:#fff;
+	--main-fonts-color: #000;
+	--main-decor-color:#0c85dbe0;
+    --main-header-background:#021b0ae5;
+	--main-font-family: 'Palatino Linotype' ;
+	--main-fonts-text: black;
+}
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+main{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--main-background);
+}
+
+/*────────────────── 
+       cabeçalho
+──────────────────*/
+
+header{
+	margin: 0 auto;
+	width: 100%;
+	height: 70px;
+	display: flex;
+    align-items: center; 
+	justify-content: space-around; 
+    /*background: transparent;*/
+	background: #4b6873;
+	position: fixed;
+	top: 0;
+	transition: 0.3s;
+	z-index: 5;
+}
+
+.nav-show{
+	opacity: 0;
+}
+
+/*header:hover{
+	opacity: 1;
+	background: var(--main-header-background);
+}*/
+
+.logo img{
+	padding-top: 5px;
+    margin-right: 100px;
+	height: 65px;
+	
+}
+
+.nav-bar{
+	list-style:none;
+	position: relative;
+	display: inline-flex;
+}
+
+a.nav-link{
+	margin: 2px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.active{
+	background: var(--main-decor-color);
+}
+
+.nav-link:hover {
+	color: #000000;
+    background: var(--main-decor-color);
+}
+
+/*──────────────────
+       home
+──────────────────*/
+
+#Home{ 	
+	margin:  auto;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#Home .filter{
+	background: url('https://www.bonasoldi.com.br/wp-content/uploads/2017/04/84150-seguranca-na-construcao-como-manusear-as-ferramentas-corretamente.jpg') no-repeat;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:.20;
+}  
+
+.intro {
+	text-align:center;
+    color: var(--main-fonts-color);
+	z-index: 1;
+	margin-left: 200px;
+    margin-right: 200px;
+	padding: 20px;
+}
+
+.intro  p{
+    margin: 5px;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+	text-align:center;
+}
+
+ h3{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 50px;
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+}
+
+/*──────────────────
+      plantas
+──────────────────*/
+
+#Serviços{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#Serviços h3{
+    padding-top: 70px;
+}
+
+#Serviços p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+
+
+.work{
+	display: flex; 
+	flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+	align-items: center;
+	padding: 20px 20%;
+}
+
+.pag{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 250px;
+	height:300px;
+	border-radius:12px;
+    background:var(--main-decor-color);
+}
+
+.pag img{
+	width: 100%;
+	height:80%;
+	border-radius:10px 10px 0px 0px;
+}
+
+.pag .work-content{
+	text-align: center;
+	padding: 5px 5px;
+	font-size: 1rem;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+}
+
+.pag a{
+	text-decoration: none;
+}
+
+.pag .work-content:hover{
+    color:#202020;
+}
+
+.pag:hover{
+	box-shadow: 0 0 1.5rem gray;
+}
+
+/*──────────────────
+      Contato
+──────────────────*/
+
+#contato{
+	margin: auto;
+	padding-bottom: 20px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--main-fonts-color);
+}
+	
+#contato p{
+	padding:10px;
+	text-align:center;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+}
+
+.social-media{
+padding: 10px;
+display: flex;
+position: center;
+align-items: space-around;
+justify-content: center;
+}
+
+.logo-rede{
+    max-width: 60px;
+    max-height: 60px;
+
+}
+
+#name h3{
+	text-align:left;
+    color: var(--main-fonts-color);
+    font-size:2rem;
+	margin-left: 200px;
+    margin-right: 200px;
+}
+
+#name p{
+        margin-left: 220px;
+        font-size:1.2rem;
+        font-family: var(--main-font-family);
+        color: var(--main-fonts-color);
+        text-align:left;
+}
+
+/*──────────────────
+      CARQUEJA
+──────────────────*/
+
+#homeCarqueja{ 	
+	margin:  0px;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
+	height: 250px;
+}
+
+#homeCarqueja .filter{
+	background: url('https://www.bonasoldi.com.br/wp-content/uploads/2017/04/84150-seguranca-na-construcao-como-manusear-as-ferramentas-corretamente.jpg') no-repeat;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+	bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:.50;
+	height: 300px;
+}   
+
+/*──────────────────
+      CIDREIRA
+──────────────────*/
+
+#homeCidreira{ 	
+	margin:  0px;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
+	height: 250px;
+}
+
+#homeCidreira.filter{
+	background: url('https://www.bonasoldi.com.br/wp-content/uploads/2017/04/84150-seguranca-na-construcao-como-manusear-as-ferramentas-corretamente.jpg') no-repeat;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+	bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:.50;
+	height: 300px;
+} 
+
+.text {
+	text-align:center;
+	color: var(--main-fonts-color);
+	z-index: 1;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 20px;
+}
+
+.text  p{
+	margin: 5px;
+	font-size:1.2rem;
+	font-family: var(--main-fonts-color);
+	text-align:center;
+	text-align: justify;
+}
+
+/* Contêiner Principal */
+.service-container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	padding: 40px;
+	padding-bottom: 60px; /* Adiciona espaço extra no final */
+	border-radius: 12px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s ease;
+  }
+  
+  .service-container:hover {
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+	transform: translateY(-2px);
+  }
+  
+  .service-container h2 {
+	text-align: center;
+	color: #333;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 24px;
+  }
+  
+  /* Seletor de Serviço */
+  .service-selector {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+  }
+  
+  .service-selector select {
+	width: 100%;
+	max-width: 400px;
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	color: #555;
+	transition: all 0.2s ease;
+  }
+  
+  .service-selector select:hover,
+  .service-selector select:focus {
+	border-color: #333;
+	outline: none;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Profissionais */
+  .professional {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 16px 0;
+	transition: background-color 0.2s ease;
+  }
+  
+  .professional:last-child {
+	border-bottom: none;
+  }
+  
+  .professional:hover {
+	background-color: #f9f9f9;
+  }
+  
+  .professional h3 {
+	margin: 0;
+	font-size: 18px;
+	color: #333;
+	font-weight: 600;
+  }
+  
+  /* Avaliação */
+  .rating {
+	display: flex;
+	align-items: center;
+	margin-top: 8px;
+	font-size: 14px;
+	color: #777;
+  }
+  
+  .rating .stars {
+	color: #ffc107;
+	font-size: 16px;
+	margin-left: 5px;
+  }
+  
+  /* Comentários */
+  .comment {
+	margin-top: 8px;
+	padding: 10px;
+	background-color: #f1f1f1;
+	border-radius: 8px;
+	font-size: 14px;
+	color: #555;
+	line-height: 1.4;
+  }
+  .comment-title {
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 4px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+	.service-container {
+	  padding: 20px;
+	}
+  
+	.service-container h2 {
+	  font-size: 22px;
+	}
+  
+	.service-selector select {
+	  font-size: 14px;
+	}
+  
+	.professional h3 {
+	  font-size: 16px;
+	}
+  
+	.rating {
+	  font-size: 12px;
+	}
+  
+	.comment {
+	  font-size: 13px;
+	}
+  }
